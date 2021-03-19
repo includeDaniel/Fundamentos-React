@@ -4,9 +4,9 @@ const msg = 'Seja bem-vindo'
 
 export default function Primeiro() {
     return (
-       <div>
+        <div>
             <h2>Primeiro Componente</h2>
-            <p>{ msg }</p>
+            <p>{msg}</p>
         </div>
-   )
+    )
 }
