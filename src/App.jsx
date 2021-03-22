@@ -4,22 +4,23 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
+import './App.css'
 
 export default function App(props) {
     return (
-        <div id="app">
+        <div className="App">
             <h1>Fundamentos React</h1>
         
-<div className="Cards">
-            <Card titulo=" #04 - Desafio Aleatório">
+        <div className="Cards">
+            <Card titulo=" #04 - Desafio Aleatório" color="#AF7AC5">
                 <Aleatorio min={1} max={100} ></Aleatorio>
             </Card>
 
-            <Card titulo=" #03 - Fragmento">
+            <Card titulo=" #03 - Fragmento" color="#F39C12">
                 <Fragmento></Fragmento>
-            </Card>
+            </Card> 
 
-            <Card titulo=" #02 - Com Parametro">
+            <Card titulo=" #02 - Com Parametro" color="#C0392B">
                 <ComParametro
                     titulo="Nota do Aluno"
                     aluno="Daniel"
@@ -27,14 +28,10 @@ export default function App(props) {
                 </ComParametro>
             </Card>
 
-            <Card titulo=" #01 - Primeiro Componente">
+            <Card titulo=" #01 - Primeiro Componente"color="#58D68D">
                 <Primeiro></Primeiro>
             </Card>
             </div>
-
-
-
-
         </div>
 
     )

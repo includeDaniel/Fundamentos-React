@@ -7,10 +7,10 @@ export default function Aleatorio(props) {
     const random = parseInt((Math.random() * (max - min) + min + 1))
     return (
         <div>
-            <h2><strong>Valor aleatório</strong></h2>
-            <p><strong>Valor minímo : </strong> {min} </p>
-            <p><strong>Valor máximo : </strong> {max} </p>
-            <p><strong>Valor escolhido : </strong>{random}</p>
+            <h2>Valor aleatório</h2>
+            <p>Valor minímo :  {min} </p>
+            <p>Valor máximo :  {max} </p>
+            <p>Valor escolhido : {random}</p>
         </div>
     )
 }
