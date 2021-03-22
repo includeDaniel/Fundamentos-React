@@ -1,12 +1,15 @@
 import React from 'react'
+import './App.css'
+
+import Card from './components/layout/Card'
+
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
-import Card from './components/layout/Card'
-import './App.css'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
+import ListaAlunos from './components/repeticao/ListaAlunos'
 
 export default function App(props) {
     return (
@@ -14,11 +17,15 @@ export default function App(props) {
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+                <Card titulo=" #06 - Repetição" color="#00A36C">
+                    <ListaAlunos></ListaAlunos>
+                </Card>
+
                 <Card titulo=" #05 - Componente com filhos" color="#6495ED">
                     <Familia sobrenome="Nunes">
                         <FamiliaMembro nome="Daniel" />
                         <FamiliaMembro nome="Vitor" />
-                        <FamiliaMembro nome="Davi" /> 
+                        <FamiliaMembro nome="Davi" />
                     </Familia>
                 </Card>
 
