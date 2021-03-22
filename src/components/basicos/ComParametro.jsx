@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function ComParametro(props) {
-    console.log(props)
     const titulo = props.titulo
     const aluno = props.aluno
     const nota = props.nota
