@@ -23,7 +23,7 @@ export default function App(props) {
 
                 <Card titulo=" #8 - Renderização Condicional" color="#ABB2B9">
                     <ParOuImpar numero={10}></ParOuImpar>
-                    <UsuarioInfo usuario={{nome : 'Daniel'}}></UsuarioInfo>
+                    <UsuarioInfo></UsuarioInfo>
                 </Card>
 
                 <Card titulo=" #07 - Desafio Repetição" color="#9F2B68">
