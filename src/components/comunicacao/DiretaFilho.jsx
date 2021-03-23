@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function (props) {
+export default function Filho(props) {
     return (
         <div>
             <span>{props.nome} /</span>

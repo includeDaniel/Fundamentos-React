@@ -14,6 +14,8 @@ import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/Usuarioinfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+
 
 export default function App(props) {
     return (
@@ -22,14 +24,18 @@ export default function App(props) {
 
             <div className="Cards">
 
-                <Card titulo=" #9 - Comunicação Direta'" color="#FFD700">
+                <Card titulo=" #10 - Comunicação Indireta" color="#006400">
+                    <IndiretaPai></IndiretaPai>
+                </Card>
+
+                <Card titulo=" #9 - Comunicação Direta" color="#FFD700">
                     <ParOuImpar numero={10}></ParOuImpar>
                     <DiretaPai></DiretaPai>
                 </Card>
 
                 <Card titulo=" #8 - Renderização Condicional" color="#ABB2B9">
                     <ParOuImpar numero={10}></ParOuImpar>
-                    <UsuarioInfo usuario={{nome : 'Daniel'}}></UsuarioInfo>
+                    <UsuarioInfo usuario={{ nome: 'Daniel' }}></UsuarioInfo>
                 </Card>
 
                 <Card titulo=" #07 - Desafio Repetição" color="#9F2B68">
