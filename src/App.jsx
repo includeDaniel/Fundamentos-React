@@ -13,6 +13,7 @@ import ListaAlunos from './components/repeticao/ListaAlunos'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/Usuarioinfo'
+import DiretaPai from './components/comunicacao/DiretaPai'
 
 export default function App(props) {
     return (
@@ -21,9 +22,14 @@ export default function App(props) {
 
             <div className="Cards">
 
+                <Card titulo=" #9 - Comunicação Direta'" color="#FFD700">
+                    <ParOuImpar numero={10}></ParOuImpar>
+                    <DiretaPai></DiretaPai>
+                </Card>
+
                 <Card titulo=" #8 - Renderização Condicional" color="#ABB2B9">
                     <ParOuImpar numero={10}></ParOuImpar>
-                    <UsuarioInfo></UsuarioInfo>
+                    <UsuarioInfo usuario={{nome : 'Daniel'}}></UsuarioInfo>
                 </Card>
 
                 <Card titulo=" #07 - Desafio Repetição" color="#9F2B68">

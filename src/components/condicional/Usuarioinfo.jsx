@@ -6,9 +6,9 @@ export default function UsuarioInfo(props) {
     return (
         <div>
             <If test={usuario && usuario.nome}>
-                Seja bem-vindo <p>{usuario.nome}</p>
+                Seja bem-vindo <strong>{usuario.nome}</strong>
                 <Else>
-                    Seja bem-vindo <p>Amigão</p>
+                    Seja bem-vindo <strong>Amigão</strong>
                 </Else>
             </If>
         </div>
