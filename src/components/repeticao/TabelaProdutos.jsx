@@ -7,7 +7,7 @@ export default function TabelaProdutos(props) {
     const Produtos = produto.map((produto, i) => {
 
         return (
-            <tr className={i % 2 == 0 ? 'Par' : ''} key={produto.id}>
+            <tr className={i % 2 === 0 ? 'Par' : ''} key={produto.id}>
                 <td>
                     {produto.id}
                 </td>
