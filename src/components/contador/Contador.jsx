@@ -23,9 +23,9 @@ class Contador extends Component {
         })
     }
 
-    setPasso = (evento) => {
+    setPasso = (novoPasso) => {
         this.setState({
-            passo: +evento.target.value
+            passo: novoPasso
         });
     }
 
@@ -34,15 +34,8 @@ class Contador extends Component {
             <div className="Contador">
                 <h2>Contador</h2>
                 <Display numero={this.state.numero}></Display>
-                <label htmlFor="passoInput">Passo: </label>
-                <input id="passoInput"
-                    type="number"
-                    value={this.state.passo}
-                    onChange={this.setPasso}></input>
-                <div>
-                    <button onClick={this.inc} > + </button>
-                    <button onClick={this.dec} > - </button>
-                </div>
+                <PassoForm passo={this.state.passo} setPasso={this.setPasso}></PassoForm>
+                <Botoes setInc={this.inc} setDec={this.dec}></Botoes>
             </div>
         )
     }
