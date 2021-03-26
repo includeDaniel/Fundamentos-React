@@ -25,7 +25,7 @@ export default function Mega (props) {
 
      const [qtde, setQtde] = useState (props.qtde || 6)
      const numerosIniciais = gerarNumeros(qtde)
-     const [numeros,setNumeros] = useState(numerosIniciais)
+     const [numeros, setNumeros] = useState(numerosIniciais)
 
     return (
         <div className="Mega">
